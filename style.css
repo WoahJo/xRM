@@ -73,10 +73,10 @@ table {
 }
 
 table th{
-   padding: 10px 0; 
-   text-align: left;
-   background-color: var(--main-color);
-   color: white;
+    padding: 10px 0; 
+    text-align: left;
+    background-color: var(--main-color);
+    color: white;
 }
 
 table td, table th {
