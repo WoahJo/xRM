@@ -1,3 +1,7 @@
+:root{
+    --main-color:  rgb(67, 164, 86);
+}
+
 html, body {
     margin: 0; 
     padding: 0;
@@ -12,7 +16,7 @@ html, body {
 }
 
 .header {
-    background-color: rgb(67, 164, 86);
+    background-color: var(--main-color);
     color: white;
     padding: 40px;
     text-align: center;
@@ -36,6 +40,7 @@ html, body {
     border: 1px lightgrey solid; 
     border-radius: 5px;
     padding: 13px;
+    margin-bottom: 40px;
 }
 
 label {
@@ -50,6 +55,37 @@ input[type='button']{
     width: 5rem; 
     padding: 7px; 
     font-size: 1.2rem;
+}
+
+input[type='button']:hover{
+    background-color: var(--main-color);
+    cursor: pointer;
+}
+
+.rep-field {
+    width: min(400px, 70%);
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+table th{
+   padding: 10px 0; 
+   text-align: left;
+   background-color: var(--main-color);
+   color: white;
+}
+
+table td, table th {
+    border: 1px lightgrey solid;
+    padding: 10px;
+}
+
+table tr:nth-child(even) {
+    background-color: lightgrey;
 }
 
 .info-block {
