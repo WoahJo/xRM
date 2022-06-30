@@ -94,10 +94,17 @@ table tr:nth-child(even) {
 }
 
 .info-block {
+    display: flex;
+    justify-content: center;
     background-color:rgb(101, 107, 101); 
     padding: 20px;
     text-align: center;
     color: white;
+}
+
+.info { 
+    width: min(700px, 70%);
+    line-height: 2.5ch;
 }
 
 a {
