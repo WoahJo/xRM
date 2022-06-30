@@ -1,36 +1,42 @@
-const xRM = {
-    appendTable: function(weight, reps) {
-        const table = document.getElementById('results');
-        const row = document.createElement('tr');
-        const addWeight = document.createElement('td'); 
-        const addReps = document.createElement('td'); 
+function clearTable() {
+    const cells = document.getElementsByTagName('td');
+    while(cells.length > 0){
+        cells[0].remove();
+    }
+}
 
-        addWeight.textContent = weight +"lbs"; 
-        addReps.textContent = reps + "RM";
+function appendTable (weight, reps) {
+    const table = document.getElementById('results');
+    const row = document.createElement('tr');
+    const addWeight = document.createElement('td'); 
+    const addReps = document.createElement('td'); 
 
-        row.append(addReps, addWeight); 
-        table.appendChild(row);
+    addWeight.textContent = weight +"lbs"; 
+    addReps.textContent = reps + "RM";
 
-    }, 
-    getWeight: function(){return this.weight;},
-    getReps: function() {return this.reps;},
-    oneMax: function () {
+    row.append(addReps, addWeight); 
+    table.appendChild(row);
+
+}
+function calcMax () {
         const weight = document.getElementsByClassName('weight')[0].value;
         const reps = document.getElementsByClassName('reps')[0].value;
 
         let max = Math.floor(weight * (36/(37 - reps) ));
-        this.appendTable(max, 1);     
-    },
-    // allMax: function () {
+        appendTable(max, 1);
 
-    // }
+        for(let i = 2; i < 11; i++){
+            let maxList = Math.floor((max * (37 - i)) / 36);
+            appendTable(maxList, i);
+        }
 };
 
-function calculate(){
+(function calculate(){
     const goBtn = document.getElementsByName('go-button')[0];
     goBtn.addEventListener('click', function(){
-        xRM.oneMax(xRM.weight, xRM.reps);
+        clearTable();
+        calcMax();
     });
-};
+})();
 
-calculate();
+// calculate();
