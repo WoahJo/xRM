@@ -95,6 +95,19 @@ table tr:nth-child(even) {
     color: white;
 }
 
+a {
+    color: white; 
+    text-decoration: underline;
+}
+
+code {
+    background-color: white;
+    color: var(--main-color);
+    font-size: 1rem;
+    padding: 4px;
+    border-radius: 4px;
+}
+
 footer{
     color: white;
     background-color: rgb(36, 39, 36);
