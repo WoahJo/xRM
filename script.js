@@ -27,7 +27,7 @@ function calcMax () {
         else{
             appendTable(max, 1);
 
-            for(let i = 2; i < 11; i++){
+            for(let i = 2; i <= 12; i++){
                 let maxList = Math.round((max * (37 - i)) / 36 * 10) / 10;
                 appendTable(maxList, i);
             }
