@@ -32,6 +32,11 @@ html, body {
     flex-direction: column;
     align-items: center;
 }
+.instr {
+    width: min(550px, 70%);
+    margin-bottom: 30px;
+}
+
 .input-area {
     display: flex;
     flex-wrap: wrap;
