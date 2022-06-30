@@ -5,4 +5,4 @@ xRM was created to help lifters access their potential 1 - 10 rep max. xRM uses 
 
 ## How it works:  
   
-Put in the weight and the number of reps you can perform with the given weight and hit `Go`. xRM will calculate and display your rep maxes up to 10 reps. Please keep in mind that the maxes are just estimates. Always use care when working with heavy weights and be sure to listen to your body.
+Enter the weight and the number of reps you can perform with the given weight and hit `Go`. xRM will calculate and display your rep maxes up to 10 reps. Please keep in mind that the maxes are just estimates. Always use care when working with heavy weights and be sure to listen to your body.
